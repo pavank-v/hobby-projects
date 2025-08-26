@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <title>Sudoku</title>
+</head>
+<body>
+  <div>
+    <h1 class="text-5xl text-center p-6">Sudoku</h1>
+    <div class="difficulty flex flex-col justify-center items-center">
+      <div>
+        <input type="radio" name="mode" value="beginner" checked>
+        <label for="beginner">Novice</label>
+      </div>
+      <div>
+      <input type="radio" name="mode" value="easy">
+      <label for="easy">Beginner</label>
+      </div>
+      <div>
+      <input type="radio" name="mode" value="medium">
+      <label for="medium">Intermediate</label>
+      </div>
+      <div>
+      <input type="radio" name="mode" value="hard">
+      <label for="hard">Advanced</label>
+      </div>
+    </div>
+  </div>
+  <div class="sudoku-board flex flex-col justify-center h-[550px] items-center">
+    <div class="board-top flex flex-row">
+      <div class="board-grid">
+        <div class="board-col-inside-grid flex flex-row">
+          <input class="data-holder border pt-2 pb-2 pr-4 pl-4 text-2xl w-12" />
+          <input class="data-holder border pt-2 pb-2 pr-4 pl-4 text-2xl w-12" />
+          <input class="data-holder border pt-2 pb-2 pr-4 pl-4 text-2xl w-12" />
+        </div>
+        <div class="board-col-inside-grid flex flex-row">
+          <input class="data-holder border pt-2 pb-2 pr-4 pl-4 text-2xl w-12" />
+          <input class="data-holder border pt-2 pb-2 pr-4 pl-4 text-2xl w-12" />
+          <input class="data-holder border pt-2 pb-2 pr-4 pl-4 text-2xl w-12" />
+        </div>
+        <div class="board-col-inside-grid flex flex-row">
+          <input class="data-holder border pt-2 pb-2 pr-4 pl-4 text-2xl w-12" />
+          <input class="data-holder border pt-2 pb-2 pr-4 pl-4 text-2xl w-12" />
+          <input class="data-holder border pt-2 pb-2 pr-4 pl-4 text-2xl w-12" />
+        </div>
+      </div>
+      <div class="board-grid">
+        <div class="board-col-inside-grid flex flex-row">
+          <input class="data-holder border pt-2 pb-2 pr-4 pl-4 text-2xl w-12" />
+          <input class="data-holder border pt-2 pb-2 pr-4 pl-4 text-2xl w-12" />
+          <input class="data-holder border pt-2 pb-2 pr-4 pl-4 text-2xl w-12" />
+        </div>
+        <div class="board-col-inside-grid flex flex-row">
+          <input class="data-holder border pt-2 pb-2 pr-4 pl-4 text-2xl w-12" />
+          <input class="data-holder border pt-2 pb-2 pr-4 pl-4 text-2xl w-12" />
+          <input class="data-holder border pt-2 pb-2 pr-4 pl-4 text-2xl w-12" />
+        </div>
+        <div class="board-col-inside-grid flex flex-row">
+          <input class="data-holder border pt-2 pb-2 pr-4 pl-4 text-2xl w-12" />
+          <input class="data-holder border pt-2 pb-2 pr-4 pl-4 text-2xl w-12" />
+          <input class="data-holder border pt-2 pb-2 pr-4 pl-4 text-2xl w-12" />
+        </div>
+      </div>
+      <div class="board-grid">
+        <div class="board-col-inside-grid flex flex-row">
+          <input class="data-holder border pt-2 pb-2 pr-4 pl-4 text-2xl w-12" />
+          <input class="data-holder border pt-2 pb-2 pr-4 pl-4 text-2xl w-12" />
+          <input class="data-holder border pt-2 pb-2 pr-4 pl-4 text-2xl w-12" />
+        </div>
+        <div class="board-col-inside-grid flex flex-row">
+          <input class="data-holder border pt-2 pb-2 pr-4 pl-4 text-2xl w-12" />
+          <input class="data-holder border pt-2 pb-2 pr-4 pl-4 text-2xl w-12" />
+          <input class="data-holder border pt-2 pb-2 pr-4 pl-4 text-2xl w-12" />
+        </div>
+        <div class="board-col-inside-grid flex flex-row">
+          <input class="data-holder border pt-2 pb-2 pr-4 pl-4 text-2xl w-12" />
+          <input class="data-holder border pt-2 pb-2 pr-4 pl-4 text-2xl w-12" />
+          <input class="data-holder border pt-2 pb-2 pr-4 pl-4 text-2xl w-12" />
+        </div>
+      </div>
+    </div>
+    <div class="board-center flex flex-row">
+      <div class="board-grid">
+        <div class="board-col-inside-grid flex flex-row">
+          <input class="data-holder border pt-2 pb-2 pr-4 pl-4 text-2xl w-12" />
+          <input class="data-holder border pt-2 pb-2 pr-4 pl-4 text-2xl w-12" />
+          <input class="data-holder border pt-2 pb-2 pr-4 pl-4 text-2xl w-12" />
+        </div>
+        <div class="board-col-inside-grid flex flex-row">
+          <input class="data-holder border pt-2 pb-2 pr-4 pl-4 text-2xl w-12" />
+          <input class="data-holder border pt-2 pb-2 pr-4 pl-4 text-2xl w-12" />
+          <input class="data-holder border pt-2 pb-2 pr-4 pl-4 text-2xl w-12" />
+        </div>
+        <div class="board-col-inside-grid flex flex-row">
+          <input class="data-holder border pt-2 pb-2 pr-4 pl-4 text-2xl w-12" />
+          <input class="data-holder border pt-2 pb-2 pr-4 pl-4 text-2xl w-12" />
+          <input class="data-holder border pt-2 pb-2 pr-4 pl-4 text-2xl w-12" />
+        </div>
+      </div>
+      <div class="board-grid">
+        <div class="board-col-inside-grid flex flex-row">
+          <input class="data-holder border pt-2 pb-2 pr-4 pl-4 text-2xl w-12" />
+          <input class="data-holder border pt-2 pb-2 pr-4 pl-4 text-2xl w-12" />
+          <input class="data-holder border pt-2 pb-2 pr-4 pl-4 text-2xl w-12" />
+        </div>
+        <div class="board-col-inside-grid flex flex-row">
+          <input class="data-holder border pt-2 pb-2 pr-4 pl-4 text-2xl w-12" />
+          <input class="data-holder border pt-2 pb-2 pr-4 pl-4 text-2xl w-12" />
+          <input class="data-holder border pt-2 pb-2 pr-4 pl-4 text-2xl w-12" />
+        </div>
+        <div class="board-col-inside-grid flex flex-row">
+          <input class="data-holder border pt-2 pb-2 pr-4 pl-4 text-2xl w-12" />
+          <input class="data-holder border pt-2 pb-2 pr-4 pl-4 text-2xl w-12" />
+          <input class="data-holder border pt-2 pb-2 pr-4 pl-4 text-2xl w-12" />
+        </div>
+      </div>
+      <div class="board-grid">
+        <div class="board-col-inside-grid flex flex-row">
+          <input class="data-holder border pt-2 pb-2 pr-4 pl-4 text-2xl w-12" />
+          <input class="data-holder border pt-2 pb-2 pr-4 pl-4 text-2xl w-12" />
+          <input class="data-holder border pt-2 pb-2 pr-4 pl-4 text-2xl w-12" />
+        </div>
+        <div class="board-col-inside-grid flex flex-row">
+          <input class="data-holder border pt-2 pb-2 pr-4 pl-4 text-2xl w-12" />
+          <input class="data-holder border pt-2 pb-2 pr-4 pl-4 text-2xl w-12" />
+          <input class="data-holder border pt-2 pb-2 pr-4 pl-4 text-2xl w-12" />
+        </div>
+        <div class="board-col-inside-grid flex flex-row">
+          <input class="data-holder border pt-2 pb-2 pr-4 pl-4 text-2xl w-12" />
+          <input class="data-holder border pt-2 pb-2 pr-4 pl-4 text-2xl w-12" />
+          <input class="data-holder border pt-2 pb-2 pr-4 pl-4 text-2xl w-12" />
+        </div>
+      </div>
+    </div>
+    <div class="board-bottom flex flex-row">
+      <div class="board-grid">
+        <div class="board-col-inside-grid flex flex-row">
+          <input class="data-holder border pt-2 pb-2 pr-4 pl-4 text-2xl w-12" />
+          <input class="data-holder border pt-2 pb-2 pr-4 pl-4 text-2xl w-12" />
+          <input class="data-holder border pt-2 pb-2 pr-4 pl-4 text-2xl w-12" />
+        </div>
+        <div class="board-col-inside-grid flex flex-row">
+          <input class="data-holder border pt-2 pb-2 pr-4 pl-4 text-2xl w-12" />
+          <input class="data-holder border pt-2 pb-2 pr-4 pl-4 text-2xl w-12" />
+          <input class="data-holder border pt-2 pb-2 pr-4 pl-4 text-2xl w-12" />
+        </div>
+        <div class="board-col-inside-grid flex flex-row">
+          <input class="data-holder border pt-2 pb-2 pr-4 pl-4 text-2xl w-12" />
+          <input class="data-holder border pt-2 pb-2 pr-4 pl-4 text-2xl w-12" />
+          <input class="data-holder border pt-2 pb-2 pr-4 pl-4 text-2xl w-12" />
+        </div>
+      </div>
+      <div class="board-grid">
+        <div class="board-col-inside-grid flex flex-row">
+          <input class="data-holder border pt-2 pb-2 pr-4 pl-4 text-2xl w-12" />
+          <input class="data-holder border pt-2 pb-2 pr-4 pl-4 text-2xl w-12" />
+          <input class="data-holder border pt-2 pb-2 pr-4 pl-4 text-2xl w-12" />
+        </div>
+        <div class="board-col-inside-grid flex flex-row">
+          <input class="data-holder border pt-2 pb-2 pr-4 pl-4 text-2xl w-12" />
+          <input class="data-holder border pt-2 pb-2 pr-4 pl-4 text-2xl w-12" />
+          <input class="data-holder border pt-2 pb-2 pr-4 pl-4 text-2xl w-12" />
+        </div>
+        <div class="board-col-inside-grid flex flex-row">
+          <input class="data-holder border pt-2 pb-2 pr-4 pl-4 text-2xl w-12" />
+          <input class="data-holder border pt-2 pb-2 pr-4 pl-4 text-2xl w-12" />
+          <input class="data-holder border pt-2 pb-2 pr-4 pl-4 text-2xl w-12" />
+        </div>
+      </div>
+      <div class="board-grid">
+        <div class="board-col-inside-grid flex flex-row">
+          <input class="data-holder border pt-2 pb-2 pr-4 pl-4 text-2xl w-12" />
+          <input class="data-holder border pt-2 pb-2 pr-4 pl-4 text-2xl w-12" />
+          <input class="data-holder border pt-2 pb-2 pr-4 pl-4 text-2xl w-12" />
+        </div>
+        <div class="board-col-inside-grid flex flex-row">
+          <input class="data-holder border pt-2 pb-2 pr-4 pl-4 text-2xl w-12" />
+          <input class="data-holder border pt-2 pb-2 pr-4 pl-4 text-2xl w-12" />
+          <input class="data-holder border pt-2 pb-2 pr-4 pl-4 text-2xl w-12" />
+        </div>
+        <div class="board-col-inside-grid flex flex-row">
+          <input class="data-holder border pt-2 pb-2 pr-4 pl-4 text-2xl w-12" />
+          <input class="data-holder border pt-2 pb-2 pr-4 pl-4 text-2xl w-12" />
+          <input class="data-holder border pt-2 pb-2 pr-4 pl-4 text-2xl w-12" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="flex justify-center items-center gap-10">
+      <div class="answer text-3xl border-white text-gray-700 bg-blue-300 p-4 border rounded-xl">Validate</div>
+      <div class="solution text-3xl border-white text-gray-700 bg-blue-300 p-4 border rounded-xl">Show Answer</div>
+    </div>
+  </div>
+</body>
+<script>
+  let solvedBoard;
+  let unsolvedBoard;
+  let mode = document.querySelector(`input[name=mode]:checked`).value;
+
+  const randomNumberBetweenRange = (min, max) => {
+    min = Math.floor(min);
+    max = Math.floor(max);
+
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  };
+
+  const sudokuSolver = (board) => {
+    emptyCells = [];
+    let rowMap = new Map();
+    let colMap = new Map();
+    let gridMap = new Map();
+
+    for (let i = 0; i < board.length; i++) {
+      for (let j = 0; j < board[0].length; j++) {
+        if (board[i][j] == 0) emptyCells.push([i, j]);
+        else {
+          let grid = Math.floor(i / 3).toString() +  Math.floor(j / 3).toString();
+          rowMap.set(i, new Set());
+          colMap.set(j, new Set());
+          gridMap.set(grid, new Set());
+
+          rowMap.get(i).add(board[i][j]);
+          colMap.get(j).add(board[i][j]);
+          gridMap.get(grid).add(board[i][j]);
+        }
+      }
+    }
+
+    const backtrack = (index) => {
+      if (index == emptyCells.length) return true;
+
+      for (let i = 1; i <= 9; i++) {
+        let row = emptyCells[index][0];
+        let col = emptyCells[index][1];
+        let grid = Math.floor(row / 3).toString() +  Math.floor(col / 3).toString();
+
+        if (!rowMap.has(row)) rowMap.set(row, new Set());
+
+        if (!colMap.has(col)) colMap.set(col, new Set());
+
+        if (!gridMap.has(grid)) gridMap.set(grid, new Set());
+
+        let rowSet = rowMap.get(row);
+        let colSet = colMap.get(col);
+        let gridSet = gridMap.get(grid);
+
+        if (!rowSet.has(i) && !colSet.has(i) && !gridSet.has(i)) {
+          rowSet.add(i);
+          colSet.add(i);
+          gridSet.add(i);
+          board[row][col] = i;
+
+          if (backtrack(index + 1)) return true;
+
+          board[row][col] = 0;
+          rowSet.delete(i);
+          colSet.delete(i);
+          gridSet.delete(i);
+        }
+      }
+    };
+
+    backtrack(0);
+  };
+
+  const sudokuBoardGenerator = (level) => {
+    let sudokuBoard = new Array(9);
+
+    for (let i = 0; i < 9; i++) {
+      sudokuBoard[i] = [0, 0, 0, 0, 0, 0, 0, 0, 0];
+    }
+
+    sudokuBoard[0][0] = randomNumberBetweenRange(1, 9);
+    sudokuSolver(sudokuBoard);
+
+    solvedBoard = JSON.parse(JSON.stringify(sudokuBoard));
+
+    const map = {
+      "beginner": 21,
+      "easy": 31,
+      "medium": 45,
+      "hard": 61,
+    };
+
+    let i = 0;
+
+    while (i < map[level]) {
+      let row = randomNumberBetweenRange(0, 8);
+      let col = randomNumberBetweenRange(0, 8);
+
+      if (sudokuBoard[row][col] == 0) continue;
+
+      sudokuBoard[row][col] = 0;
+      i += 1;
+    }
+
+    return [solvedBoard, sudokuBoard];
+  };
+
+  const initailizer = () => {
+    let boards = sudokuBoardGenerator(mode);
+    solvedBoard = boards[0];
+    unsolvedBoard = boards[1];
+
+    let dataHolders = Array.from(document.querySelectorAll(".data-holder"));
+    
+    for (let i = 8; i >= 0; i--) {
+      for (let j = 8; j >= 0 ; j--) {
+        if (unsolvedBoard[i][j] != 0) {
+          const element = dataHolders.pop();
+          element.value = unsolvedBoard[i][j];
+          element.disabled = true;
+        }
+        else {
+          dataHolders.pop();
+        }
+      }
+    }
+  };
+
+  document.querySelector(".answer").addEventListener("click", () => {
+    let currentBoard = Array.from(document.querySelectorAll(".data-holder"));
+
+    for (let i = 8; i >= 0; i--) {
+      for (let j = 8; j >= 0; j--) {
+        let value = currentBoard.pop().value;
+
+        if (!value) {
+          alert("Please fill the entire board to check the answer");
+          return;
+        }
+
+        if (value != solvedBoard[i][j]) {
+          alert("Your solution is wrong");
+          return
+        }
+      }
+    }
+
+    alert("Congratulation... You solved the board");
+    cleanUP();
+    initailizer();
+  });
+
+  document.querySelector('.solution').addEventListener("click", () => {
+    let currentBoard = Array.from(document.querySelectorAll(".data-holder"));
+
+    for (let i = 8; i >= 0; i--) {
+      for (let j = 8; j >= 0; j--) {
+        currentBoard.pop().value = solvedBoard[i][j];
+      }
+    }
+  });
+
+  document.querySelector('.difficulty').addEventListener('click', () => {
+    cleanUP();
+    initailizer();
+  });
+
+  const cleanUP = () => {
+    mode = document.querySelector(`input[name="mode"]:checked`).value;
+    let currentBoard = Array.from(document.querySelectorAll(".data-holder"));
+
+    for (let i = 8; i >= 0; i--) {
+      for (let j = 8; j >= 0; j--) {
+        let element = currentBoard.pop();
+        element.value = '';
+        element.disabled = false;
+      }
+    }
+  }
+
+  initailizer();
+</script>
+</html>
