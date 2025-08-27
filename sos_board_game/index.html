@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <title>SOS game</title>
+  <style>
+    input:focus {
+      outline: none;
+    }
+  </style>
+</head>
+
+<body>
+  <h1 class="text-5xl p-10 text-center">SOS Board Game</h1>
+  <div class="flex justify-around items-center h-full">
+    <div class="sos-board flex flex-col">
+      <div class="flex">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+      </div>
+      <div class="flex">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+      </div>
+      <div class="flex">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+      </div>
+      <div class="flex">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+      </div>
+      <div class="flex">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+      </div>
+      <div class="flex">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+      </div>
+      <div class="flex">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+      </div>
+      <div class="flex">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+      </div>
+      <div class="flex">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+      </div>
+      <div class="flex">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+      </div>
+      <div class="flex">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+      </div>
+      <div class="flex">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+      </div>
+      <div class="flex">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+      </div>
+      <div class="flex">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+      </div>
+      <div class="flex">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+      </div>
+      <div class="flex">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+        <input class="data-holder border w-10 h-10 text-4xl text-center" type="text" maxlength="1">
+      </div>
+    </div>
+    <div class="score-board">
+      <div class="flex flex-col gap-4">
+        <div class="flex">
+          <div class="flex flex-col">
+            <div class="text-5xl text-red-400 w-24 h-18 p-2 text-center border-t-2 border-l-2 border-b-2 border-black">A</div>
+            <div class="a-score text-5xl text-red-400 w-24 p-2 h-18 text-center border border-black">0</div>
+          </div>
+          <div class="flex flex-col">
+            <div class="text-5xl text-gray-500 w-24 h-18 p-2 text-center border-t-2 border-r-2 border-l-2 border-b-2 border-black">B</div>
+            <div class="b-score text-5xl text-gray-500 w-24 p-2 h-18 text-center border border-black">0</div>
+          </div>
+        </div>
+        <div class="turns flex justify-around">
+          <div class="flex flex-row gap-2">
+            <input type="radio" name="turn" value="a" class="form-radio accent-red-400" checked>
+            <label for="a" class="text-2xl text-red-400">A</label>
+          </div>
+          <div class="flex flex-row gap-2">
+            <input type="radio" name="turn" value="b" class="form-radio accent-gray-500">
+            <label for="b" class="text-2xl text-gray-500">B</label>
+          </div>
+        </div>
+        <div>
+          <h1 class="a-text text-3xl text-red-400 text-center">Its A Turn!!!</h1>
+          <h1 class="b-text text-3xl text-gray-500 text-center hidden">Its B Turn!!!</h1>
+        </div>
+        <div>
+          <h1 class="clear-board text-3xl text-gray-500 text-center p-4 border border-gray-300 rounded-2xl shadow-xl">Clear Board</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+<script>
+  let pervAnswers = new Set();
+  let player = true;
+
+  const updateScore = () => {
+    let boardElement = Array.from(document.querySelectorAll('.data-holder'));
+    let board = new Array(16);
+
+    for (let i = 15; i >= 0; i--) {
+      board[i] = new Array(16);
+
+      for (let j = 15; j >= 0 ; j--) {
+        board[i][j] = boardElement.pop();
+      }
+    }
+
+    let directions = [
+        [-1, 0], [1, 0], [0, -1], [0, 1], 
+        [1, 1], [-1, -1], [1, -1], [-1, 1] 
+    ];
+
+    let score = 0;
+
+    for (let i = 0; i < 16; i++) {
+      for (let j = 0; j < 16; j++) {
+        if (board[i][j].value == 's' || board[i][j].value == 'S') {
+          directions.forEach((d) => {
+            let dr = d[0];
+            let dc =  d[1];
+            let ndr = dr + i;
+            let ndc = dc + j;
+            let nndr = dr * 2 + i;
+            let nndc = dc * 2 + j;
+            let position = i.toString() + j.toString() + ndr.toString() + ndc.toString() + nndr.toString() + nndc.toString();
+            let reversePosition = nndr.toString() + nndc.toString() + ndr.toString() + ndc.toString() + i.toString() + j.toString();
+
+            if ((!pervAnswers.has(position) && !pervAnswers.has(reversePosition)) && 
+            nndr >= 0 && nndr < 16 && nndc >= 0 && nndc < 16) {
+
+              let sos = board[i][j].value + board[ndr][ndc].value + board[nndr][nndc].value;
+              
+              if (sos.toLowerCase() === "sos") {
+                console.log("gotcha")
+                board[i][j].classList.add('line-through');
+                board[ndr][ndc].classList.add('line-through');
+                board[nndr][nndc].classList.add('line-through');
+                pervAnswers.add(position);
+                pervAnswers.add(reversePosition);
+                score += 1
+              }
+            }
+          });
+        }
+      }
+    }
+
+    let currentPlayer = document.querySelector("input[name='turn']:checked").value;
+    let currentPlayerScore = document.querySelector('.' + currentPlayer.toString() + "-score");
+    currentPlayerScore.innerText = parseInt(currentPlayerScore.innerText) + score;
+  };
+
+  document.querySelector('.sos-board').addEventListener('click', () => {
+    element = document.querySelector(":focus")
+    element.onkeydown = (event) => {
+      const key = event.key;
+
+      if (key !== 's' && key !== 'o' && key !== 'S' && key !== 'O') {
+        event.preventDefault();
+      }
+
+      if (key == 's' || key == 'S') {
+        element.classList.add("text-red-400");
+        element.classList.add("border-black");
+        setTimeout(updateScore, 100);
+      } 
+      else if (key == 'o' || key == 'O') {
+        element.classList.add("text-gray-500")
+        setTimeout(updateScore, 100);
+      }
+
+      console.log(pervAnswers)
+    };
+  });
+
+  document.body.addEventListener('click', () => {
+    a = document.querySelector('.a-text');
+    b = document.querySelector('.b-text');
+
+    val = document.querySelector(`input[name='turn']:checked`).value;
+    
+    if (val == 'a') {
+      a.classList.remove('hidden');
+
+      if (!b.classList.contains('hidden')) {
+        b.classList.add('hidden');
+      }
+    }
+    else {
+      b.classList.remove('hidden');
+
+      if (!a.classList.contains('hidden')) {
+        a.classList.add('hidden');
+      }
+    }
+  });
+
+  document.querySelector('.clear-board').addEventListener("click", () => {
+    pervAnswers.clear();
+    
+    let board = Array.from(document.querySelectorAll(".data-holder"));
+
+    while (board.length > 0) {
+      element = board.pop();
+      element.value = '';
+      element.class = 'data-holder border w-10 h-10 text-4xl text-center';
+    }
+  });
+</script>
+</html>
